@@ -14,7 +14,7 @@ nav{
 }
 nav .logo a{
     text-decoration: none;
-    color: #c76767;
+    color: #ee3a3a;
     font-size: 35px;
     font-weight: 600;
 }
@@ -29,7 +29,7 @@ nav li{
 }
 nav li a{
     text-decoration: none;
-    color: #fff;
+    color: #5cfcfc;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 15px;
@@ -37,12 +37,12 @@ nav li a{
     transition: 0.3s;
 }
 nav li a:hover{
-    background-color: white;
-    color: black;
+    background-color: rgb(1, 156, 130);
+    color: rgb(0, 255, 213);
 }
 .banner{
     height: 100vh;
-    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('background.jpg');
+    background: linear-gradient( rgba(131, 3, 3, 0.281), rgba(0,0,0,0.308)),url('background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -51,13 +51,24 @@ nav li a:hover{
     justify-content: center;
     text-align: center;
 }
+.Casual{
+    height: 100vh;
+    background: linear-gradient( rgba(255, 255, 255, 0), rgba(0, 0, 0, 0)),url('Casual.png');
+    background-size: 200;
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .texto .titulo{
-    color: #fff;
+    color: #66ff00;
     font-size: 60px;
     font-weight: 600;
 }
 .texto .sub_titulo{
-    color: #fff;
+    color: #f80000;
     font-size: 58px;
     font-weight: 600;
 }
@@ -77,18 +88,27 @@ nav li a:hover{
     outline: none;
     transition: 0.3s;
 }
-.texto .botoes button.n-overlay{
-    color: white;
+.texto .botoes button.Casual-overlay{
+    color: rgb(234, 0, 255);
     background: none;
-    border: 2px solid white;
+    border: 2px solid rgba(205, 6, 255, 0.199);
 }
-.texto .botoes button.n-overlay:hover{
-    color: black;
-    background-color: white;
+.texto .botoes button.Casual-overlay:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(226, 0, 158);
 }
-.texto .botoes button.overlay{
-    background: white;
-    color: black;
+.texto .botoes button.Tumore-overlay{
+    color: rgba(86, 0, 94, 0.692);
+    background: none;
+    border: 2px solid rgba(205, 6, 255, 0.87);
+}
+.texto .botoes button.Tumore-overlay:hover{
+    color: rgb(247, 0, 255);
+    background-color: rgb(122, 6, 113);
+}
+.texto .botoes button.Normal-overlay{
+    background: rgb(4, 253, 191);
+    color: rgba(1, 117, 102, 0.555);
     animation: vibrar 0.5s ease-in-out infinite both;
 }
 @keyframes vibrar {
